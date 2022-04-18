@@ -1,0 +1,28 @@
+body{
+    display: flex;
+    margin: 0;
+    height: 500px;
+    font-size: 50px;
+}
+body > div{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: blueviolet;
+}
+body > div::before{
+    content: "";
+    display: block;
+    background-color: plum;
+    width: 100%;
+    height: 100%;
+}
+body > div::after{
+    content: "";
+    display: block;
+    background-color: red;
+    width: 100%;
+    height: 100%;
+}
